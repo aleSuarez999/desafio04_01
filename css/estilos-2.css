@@ -1,25 +1,311 @@
 /*
 color de fondo #e11364
 */
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
 * { box-sizing: border-box; }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #297373;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e6e6;
     margin: 0;
     padding: 0px;
-    width: 85%;
+    width: 75%;
     margin: auto;
     font-size: 16px;
-    border: 2px solid red;
+    
 }
 
-header{
-    width: 90%;
-    margin: auto;
-    border: 2px solid green;
+header {
+    height: 12vh;
+    width: 100%;
 }
 
 main{
+    background-color: #39393a;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 1rem;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#container{
+
+    display: flex;
+    width: 100%;
+    margin: auto ;
+    background-color: #39393a;
+    padding: 10px;
+    border-radius: 3px;
+    flex-direction: row;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+
+/*    font-family: "Henny Penny", system-ui;*/
+    
+    font-variant: small-caps;
+    
+    font-size: 4rem;
+    height: 7rem;
+    
+    width: 100%;
+    /*border-left: 2px solid white;
+    border-right: 2px solid white;*/
+    background-color: #e9d758;
+    background: linear-gradient( #e6e6e6, #ebb523  );
+    color:#2e2c2c ;
+    
+    border-radius: 0px 0px 50px 50px;
+    
+    /*border: 3px solid #39393a;*/
+    /*border-left: 3px solid #39393a;
+    border-right: 3px solid #39393a;*/
+}
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-items-end
+{
+    display: flex;
+    align-items: end;
+}
+
+.justify-content-end {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.grupoTitulo{
+    
+    display: flex;
+    font-size: 1.1rem;
+    color: white;
+    
+    margin-right: 3%;
+    
+    justify-content: end;
+}
+.articuloInicial{
+    /*display: flex;*/
+    width: 50%;
+    background-color: #297373;
+    padding: 2px 5px 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+}
+
+
+/*justify-content-end align-items-end se remueve del index*/
+.articuloTitulo{
+    display: flex;
+    height: 50px;
+    width: 80%;
+    font-size: 1.3rem;
+    color: #e6e6e6;
+    margin-left: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+    justify-content: start;
+    align-items: end;
+    
 
 }
+
+
+.imagenInicial
+{
+    display: flex;
+    width: 95%;
+    border-radius: 7px;
+    padding: 0px;
+    border: 2px solid #e6e6e6;
+    margin: auto;
+}
+/*justify-content-center*/
+
+footer {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+.botonComprar{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    color: #413f3f;
+    padding: 0.8rem;
+    height: 3rem;
+    background-color:#e9d758;
+    border-radius: 0.5rem;
+}
+
+.botonComprar:hover{
+    /*background-color: #e72864;*/
+    cursor:pointer
+}
+
+p{
+    margin: 0px 10px 10px 0px;
+    /*background-image: url(/img/mortal-kombat-11.jpg);*/
+    color:white;
+    
+}
+
+.articuloInicial div.parrafo{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5% 0;
+    flex-direction: column-reverse;
+    /*background-color: #ddc53a;*/
+    width: 90%;
+    /*height: 100%;*/
+}
+
+p::before {
+    
+  }
+  
+  p::first-letter {
+    font-size: 1.5rem;
+    /*font-variant: small-caps;*/
+  }
+
+/***************DETALLE***************/
+
+.articuloDetalle{
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+    display: flex;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+    display: flex;
+}
+.barraImagenes{
+    display: flex;
+    padding: 1rem;
+    height: 400px;
+    width: 10%;
+    margin: 1rem 0;
+    border: 2px dotted #bc105c;
+}
+
+
+.detalleImagen{
+    padding: 1rem;
+    
+    margin: 1rem 0;
+    width: 60%;
+    border-radius: 3px;
+    /*border: 2px solid black;*/
+}
+
+
+.detalleDescripcion{
+    
+    padding: 1rem;
+    
+    margin: 1rem 0;
+    width: 30%;
+    font-size: 0.9rem;
+
+    border-radius: 3px;
+    /*border: 2px solid black;*/
+}
+
+.detalleImagen img{
+    border-radius: 10px;
+    /*box-shadow: 5px 5px #bc105c;*/
+}
+
+.detalleContainer{
+    display: flex;
+    width: 100%;
+    margin: auto ;
+    /*background-color: #bc105c;*/
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /*border: 1px solid black;*/
+}
+
+.miniImagen{
+    border-left: 2px solid black;
+    padding-left: 5px;
+    border-radius: 2px;
+    margin-top: 10%;
+}
+
+.miniImagen:hover{
+    
+  cursor: pointer;
+  border-left: 2px solid #bc105c;
+   
+  opacity: 50%;
+  
+}
+/*
+.miniImagen:active{
+
+    border: 1px solid blue;
+}
+*/
+
+#imagenAmpliada{
+    width: 100%;
+
+}
+
+.blanco
+{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.justify-content-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-content-space-around{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+

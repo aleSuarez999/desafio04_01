@@ -30,8 +30,8 @@ main{
     margin-top: 3rem;
 }
 
-.container{
-    display: flex;
+#container{
+    /*display: flex;*/
     width: 100%;
     margin: auto ;
     background-color: #bc105c;
@@ -77,19 +77,8 @@ h1{
     font-size: 1.3rem;
     color: white;
     margin-bottom: 1rem;
+    align-items: center;
 }
-
-.articuloTitulo{
-    
-    height: 50px;
-    font-size: 1.3rem;
-    color: #bc105c;
-    border-bottom: 2px dotted #bc105c;
-    margin-bottom: 10px;
-    
-
-}
-
 .articuloInicial{
     background-color: white;
     padding: 2px 5px 2px 5px;
@@ -97,14 +86,31 @@ h1{
     margin-bottom: 3rem;
 }
 
+
+/*justify-content-end align-items-end se remueve del index*/
+.articuloTitulo{
+    display: flex;
+    height: 50px;
+    font-size: 1.3rem;
+    color: #bc105c;
+    border-bottom: 2px dotted #bc105c;
+    margin-bottom: 10px;
+    justify-content: end;
+    align-items: end;
+    
+
+}
+
+
 .imagenInicial
 {
     width:100% ;
 }
-
+/*justify-content-center*/
 footer {
     display: flex;
     height: 15vh;
+    justify-content: center;
 }
 
 .botonComprar{
