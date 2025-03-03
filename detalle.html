@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos-1.css">
+    <!-- <link rel="stylesheet" href="css/estilos-2.css"> -->
+     <script>
+        function cambiaImagen(imagenNueva)
+        {
+            imgDestino = document.getElementById("imagenAmpliada");
+            imgDestino.src = "img/" + imagenNueva;
+        }
+     </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class=" justify-content-center align-items-center">Juegos</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="grupoTitulo"><a href="index.html" class="blanco">Juegos</a> / Mario Kart™ 8 Deluxe</h2>
+        <div class="detalleContainer justify-content-evenly">
+            <div class="barraImagenes justify-content-evenly  flex-direction-column">
+                <img class="miniImagen" src="img/Mario01_mini.png" alt="Imagen de portada de mario kart 8 " onclick="cambiaImagen('Mario01.avif')">
+                <img class="miniImagen" src="img/Mario02_mini.png" alt="Imagen de carrera con motos y cartings" onclick="cambiaImagen('Mario02.avif')">
+                <img class="miniImagen" src="img/Mario03_mini.png" alt="Imagen de carreras en motos con Yoshis" onclick="cambiaImagen('Mario03.avif')">
+                <img class="miniImagen" src="img/Mario04_mini.png" alt="Imagen de carreras con Mario y Yoshi en karts" onclick="cambiaImagen('Mario04.avif')">
+                <img class="miniImagen" src="img/Mario05_mini.png" alt="Imagen de carrera con tortugas de esqueletos" onclick="cambiaImagen('Mario05.avif')">
+            </div>
+            <div class="detalleImagen justify-content-center align-items-center">
+                <img id="imagenAmpliada" src="img/Mario01.avif" alt="">
+            </div>
+            <div class="detalleDescripcion justify-content-space-between flex-direction-column">
+                <h3>Lo que tenés que saber de este producto</h3>
+                <ul>
+                    <li>Formato: Físico</li>
+                    <li>Plataforma: Nintendo Switch</li>
+                    <li>Clasificación E.</li>
+                    <li>Año de lanzamiento: 2017.</li>
+                    <li>Desarrollado por Nintendo.</li>
+                    <li>Género: carreras.</li>
+                    <li>Tamaño del archivo: 11.3 GB.</li>
+                    <li>La memoria RAM mínima que necesitás para reproducir tu juego es de 4 MB.</li>
+                    <li>Se encuentra disponible para jugar online.</li>
+                    <li>Es apto para múltiples jugadores.</li>
+            </ul>
+                <div class="justify-content-center">
+                    <form action="comprar.html" target="_blank">
+                        <button class="botonComprar" type="submit" >Comprar!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

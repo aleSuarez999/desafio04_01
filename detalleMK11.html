@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos-1.css">
+    <!-- <link rel="stylesheet" href="css/estilos-2.css"> -->
+     <script>
+        function cambiaImagen(imagenNueva)
+        {
+            imgDestino = document.getElementById("imagenAmpliada");
+            imgDestino.src = "img/" + imagenNueva;
+        }
+     </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class=" justify-content-center align-items-center">Juegos</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="grupoTitulo"><a href="index.html" class="blanco">Juegos</a> / Mario Kart™ 8 Deluxe</h2>
+        <div class="detalleContainer justify-content-evenly">
+            <div class="barraImagenes justify-content-evenly  flex-direction-column">
+                <img class="miniImagen" src="img/MK1101_mini.png" alt="Imagen de Scorpion y Subzero" onclick="cambiaImagen('MK1101.jpg')">
+                <img class="miniImagen" src="img/MK1102_mini.png" alt="Imagen de pelea de rayden" onclick="cambiaImagen('MK1102.jpg')">
+                <img class="miniImagen" src="img/MK1103_mini.png" alt="Imagen de enfrentamiento con el Guason" onclick="cambiaImagen('MK1103.jpg')">
+                <img class="miniImagen" src="img/MK1104_mini.png" alt="Imagen de Robocop" onclick="cambiaImagen('MK1104.jpg')">
+                <img class="miniImagen" src="img/MK1105_mini.png" alt="Imagen de Pelea con espadas" onclick="cambiaImagen('MK1105.jpg')">
+            </div>
+            <div class="detalleImagen justify-content-center align-items-center">
+                <img id="imagenAmpliada" src="img/MK1101.jpg" alt="">
+            </div>
+            <div class="detalleDescripcion justify-content-space-between flex-direction-column">
+                <h3>Lo que tenés que saber de este producto</h3>
+                <ul>
+                    <li> Se requiere PS Plus para jugar online</li>
+                    <li> Compras dentro del juego opcionales</li>
+                    <li> Admite hasta 8 jugadores online que tengan PS Plus</li>
+                    <li> Juego online opcional</li>
+                    <li> 1-2 jugadores</li>
+                    <li> ESRB Mature</li>
+                    <li> Derramamiento de sangre, Lenguaje fuerte, Violencia intensa</li>
+                    <li> Compras dentro del juego, Los usuarios interactúan</li>
+                </ul>
+                <div class="justify-content-center">
+                    <form action="comprar.html" target="_blank">
+                        <button class="botonComprar" type="submit" >Comprar!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
