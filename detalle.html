@@ -9,8 +9,36 @@
      <script>
         function cambiaImagen(imagenNueva)
         {
+            //oculto video si se esta mostrando
+            video = document.getElementById("tagVideo");
+            video.pause();
+            video.style.visibility = "hidden";
+            video.style.display = "none";
+            // cambio imagen
             imgDestino = document.getElementById("imagenAmpliada");
+            imgDestino.style.visibility = "visible";
+            imgDestino.style.display = "initial";
+            
             imgDestino.src = "img/" + imagenNueva;
+         
+        }
+        function muestraVideo()
+        {
+            /*oculto imagen*/
+
+            imgDestino = document.getElementById("imagenAmpliada");
+            imgDestino.style.visibility = "hidden";
+            imgDestino.style.display = "none";
+         
+            /*muestro video*/
+            video = document.getElementById("tagVideo");
+            video.style.visibility = "visible";
+            video.style.display = "block";
+            video.style.width = "100%";
+//            video.style.objectFit = "fill";
+            video.autoplay = true;
+            video.play();
+            //video.src="media/Mario.mp4" 
         }
      </script>
 </head>
@@ -26,13 +54,14 @@
         <div class="detalleContainer justify-content-evenly">
             <div class="barraImagenes justify-content-evenly  flex-direction-column">
                 <img class="miniImagen" src="img/Mario01_mini.png" alt="Imagen de portada de mario kart 8 " onclick="cambiaImagen('Mario01.avif')">
-                <img class="miniImagen" src="img/Mario02_mini.png" alt="Imagen de carrera con motos y cartings" onclick="cambiaImagen('Mario02.avif')">
+                <img class="miniImagen" src="img/Mario02_mini.png" alt="Imagen de carrera con motos y cartings" onclick="muestraVideo()">
                 <img class="miniImagen" src="img/Mario03_mini.png" alt="Imagen de carreras en motos con Yoshis" onclick="cambiaImagen('Mario03.avif')">
                 <img class="miniImagen" src="img/Mario04_mini.png" alt="Imagen de carreras con Mario y Yoshi en karts" onclick="cambiaImagen('Mario04.avif')">
                 <img class="miniImagen" src="img/Mario05_mini.png" alt="Imagen de carrera con tortugas de esqueletos" onclick="cambiaImagen('Mario05.avif')">
             </div>
             <div class="detalleImagen justify-content-center align-items-center">
-                <img id="imagenAmpliada" src="img/Mario01.avif" alt="">
+                 <img id="imagenAmpliada" src="img/Mario01.avif" alt=""> 
+                 <video id="tagVideo"  src="media/MarioKart8.mp4" controls  style="display: none;" ></video>
             </div>
             <div class="detalleDescripcion justify-content-space-between flex-direction-column">
                 <h3>Lo que tenés que saber de este producto</h3>
